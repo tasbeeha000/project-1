@@ -74,9 +74,12 @@ body{
 
 
 }
+.navbar-nav a{
+transition: all 0.3s;
+}
 .navbar-nav a:hover{
 	color: rgb(59, 175, 238);
-	font-size: 17px;
+	
 }
 .w-100{
 	height: 100vh;
