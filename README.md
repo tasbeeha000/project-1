@@ -13,7 +13,17 @@
 </ul>
 
 <h3>OverView</h3>
+
+<br>
+
+<h3>How its Work?</h3>
+
+https://github.com/tasbeeha000/project-1-Construction-website/assets/137652796/6b98a317-92d4-4ffa-9568-5df817b08870
+
+<br>
+
 <h4>Mobile View </h4>
+
 
 ![r7](https://github.com/tasbeeha000/project-2-restaurant-website/assets/137652796/7ffd72c3-4205-40e0-b965-8c5cfff02129)
 ![r8](https://github.com/tasbeeha000/project-2-restaurant-website/assets/137652796/1a962cc5-eb4a-4cac-bb2a-9002d129c31f)
@@ -27,15 +37,20 @@
 
 ![r12](https://github.com/tasbeeha000/project-2-restaurant-website/assets/137652796/aa7b1825-f7ea-4b32-b168-c004304f5739)
 
+
 ![13](https://github.com/tasbeeha000/project-1-Construction-website/assets/137652796/3a46fbc8-ed7e-40a3-b9f8-57d050f3db45)
+
+<br>
 
 ![r14](https://github.com/tasbeeha000/project-1-Construction-website/assets/137652796/faf308fc-4c86-4f65-b079-bdced38158a8)
 
 
 <br>
+
 <h4>Laptop View</h4>
 
 ![r1](https://github.com/tasbeeha000/project-2-restaurant-website/assets/137652796/1c9117de-58e4-487c-b7a5-bbd60ed1a65b)
+
 ![r2](https://github.com/tasbeeha000/project-2-restaurant-website/assets/137652796/a34269f7-a0e9-4f1b-a641-9982bb110387)
 
 <br>
@@ -46,6 +61,7 @@
 <br>
 
 ![r5](https://github.com/tasbeeha000/project-2-restaurant-website/assets/137652796/a463e77f-50bf-4d8e-be75-d23cce45ebad)
+
 ![r6](https://github.com/tasbeeha000/project-2-restaurant-website/assets/137652796/06e33ce4-ce3f-4533-acde-3fb2cd43935f)
 
 <br>
@@ -56,6 +72,3 @@
 
 <br>
 
-<h3>How its Work?</h3>
-
-https://github.com/tasbeeha000/project-1-Construction-website/assets/137652796/6b98a317-92d4-4ffa-9568-5df817b08870
