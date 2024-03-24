@@ -36,16 +36,12 @@ https://github.com/tasbeeha000/project-1-Construction-website/assets/137652796/6
 <br>
 
 ![r12](https://github.com/tasbeeha000/project-2-restaurant-website/assets/137652796/aa7b1825-f7ea-4b32-b168-c004304f5739)
-
-
 ![13](https://github.com/tasbeeha000/project-1-Construction-website/assets/137652796/3a46fbc8-ed7e-40a3-b9f8-57d050f3db45)
 
 <br>
 
 ![r14](https://github.com/tasbeeha000/project-1-Construction-website/assets/137652796/faf308fc-4c86-4f65-b079-bdced38158a8)
 
-
-<br>
 
 <h4>Laptop View</h4>
 
