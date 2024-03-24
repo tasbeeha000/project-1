@@ -98,26 +98,33 @@ body{
 }
 
 
-.parent{
-	
-	overflow:hidden;
-	position:relative;
-	display:inline-block;
-	cursor:pointer;
 
-}
 .child{
 
 	background-size:cover;
-	transition:all 0.1s;
- }
+	transition:all 0.3s;
+ } 
 
- .parent:hover .child{
-	transform: scale(1.2);
+ .child:hover{
+	transform: scale(1.1);
  }
-
+.service-card{
+	border-radius: 66px;
+background: #ffffff;
+box-shadow: inset 24px 24px 48px rgb(227, 225, 225),
+            inset -24px -24px 48px #ffffff;
+}
+.service-btn{
+color: black;
+	transition: all 0.3s;
+}
+.service-btn:hover   {
+	color: black;
+	text-decoration: underline;
+	
+}
 .services .card-body i {
-	font-size: 40px;
+	font-size: 30px;
 	/* color: aqua; */
 }
 .service-text{
@@ -140,18 +147,25 @@ body{
 
 	
 }
+
+
 .portfolio .card{
 	box-shadow: 15px 15px 40px rgba(0,0,0,0.13);
+	
+
 }
 #back-video{
 	width: 100%;
 	height: auto;
 	object-fit: cover;
 }
-
-.services .card{
-	box-shadow: 15px 15px 40px rgba(0,0,0,0.6);
+.lead{
+	font-size: 14px;
 }
+
+/* .services .card{
+	box-shadow: 15px 15px 40px rgba(0,0,0,0.6);
+} */
 .customer .card{
 	box-shadow: 15px 15px 40px rgba(0,0,0,0.13);
 
