@@ -1,915 +1,1228 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-	<!-- navbar section -->
+    <!-- navbar section -->
 
-	<nav class="navbar navbar-expand-lg bg-body-tertiary  fixed-top">
-		<div class="container">
-		  <a class="navbar-brand" href="#"><span class="text-info logo-text">EM</span><span class="express"> Xpress</span></a>
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-<!-- mb-lg-0 applies 0 bottom margin 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><span class="text-info logo-text">EM</span
+          ><span class="express"> Xpress</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- mb-lg-0 applies 0 bottom margin 
 and ms-auto applies content to go to left side-->
-			<ul class="navbar-nav ms-auto  mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
 
-			  <li class="nav-item">
-				<a class="nav-link" href="#home">Home</a>
-			  </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
 
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Milestones</a>
+            </li>
 
-			  <li class="nav-item">
-				<a class="nav-link" href="#services">Services</a>
-			  </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Teams</a>
+            </li>
 
-			  <li class="nav-item">
-				<a class="nav-link" href="#about">Why Us</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#portfolio">Milestones</a>
-			  </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#clients">Client</a>
+            </li>
 
-			  <li class="nav-item">
-				<a class="nav-link" href="#team">Teams</a>
-			  </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-			  <li class="nav-item">
-				<a class="nav-link" href="#clients">Client</a>
-			  </li>
-			  
-			  <li class="nav-item">
-				<a class="nav-link" href="#contact">Contact</a>
-			  </li>
-	
-			 
-			</ul>
-		
-		  </div>
-		</div>
-	  </nav>
+    <!-- slider section -->
 
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div id="home" class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image/h1.webp" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>We Promise You</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              <a
+                href="#"
+                class="btn btn-custom nt-3"
+                style="background-color: rgb(59, 175, 238)"
+                >Explore Now</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="image/h2.jpeg" class="d-block w-100" alt="..." />
 
-	  <!-- slider section -->
+          <div class="carousel-caption">
+            <h5>We Make Your Dream Come True</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              <a
+                href="#"
+                class="btn btn-custom nt-3"
+                style="background-color: rgb(59, 175, 238)"
+                >Explore Now</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="image/h3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Choose The Best</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              <a
+                href="#"
+                class="btn btn-custom nt-3"
+                style="background-color: rgb(59, 175, 238)"
+                >Explore Now</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
+    <!-- services section -->
 
-	  <div id="carouselExampleCaptions"  class="carousel slide">
-		<div class="carousel-indicators">
-		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		</div>
-		<div id="home" class="carousel-inner">
-		  <div class="carousel-item active">
-			<img src="image/h1.webp" class="d-block w-100" alt="...">
-			<div class="carousel-caption">
-			  <h5>We Promise You</h5>
-			  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-			  <p>
-				<a href="#" class="btn btn-custom  nt-3" style=" background-color:  rgb(59, 175, 238)">Explore Now</a>
-			  </p>
-			</div>
-		  </div>
-		  <div class="carousel-item">
-			<img src="image/h2.jpeg" class="d-block w-100" alt="...">
-			
-			<div class="carousel-caption">
-			  <h5>We Make Your Dream Come True</h5>
-			  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-			  <p>
-				<a href="#" class="btn btn-custom nt-3" style=" background-color:  rgb(59, 175, 238)">Explore Now</a>
-			  </p>
-			</div>
-		  </div>
-		  <div class="carousel-item ">
-			<img src="image/h3.jpg" class="d-block w-100" alt="...">
-			<div class="carousel-caption">
-			  <h5>Choose The Best</h5>
-			  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-			  <p>
-				<a href="#" class="btn btn-custom nt-3" style="background-color: rgb(59, 175, 238)">Explore Now</a>
-			  </p>
-			  
-			</div>
-		  </div>
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		  <span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		  <span class="visually-hidden">Next</span>
-		</button>
-	  </div>
+    <section id="services" class="services section-padding">
+      <div class="container">
+        <div class="row">
+          <!-- pd-5 add padding to the bottom it can be btw 1 to 5-->
 
+          <div class="col-12">
+            <div class="text-center pb-5">
+              <h3 class="service-text">Our Services</h3>
+              <p>
+                Lorem ipsum dolor sit amet,<br />
+                consectetur adipisicing elit. Culpa mias.
+              </p>
+            </div>
+          </div>
+        </div>
 
-	  
-	  <!-- services section -->
+        <div class="row">
+          <div
+            class="col-12 col-lg-4 col-md-12 parent"
+            style="margin-top: 15px"
+          >
+            <div
+              class="card text-white text-center pb-5"
+              style="background-color: white"
+            >
+              <div class="card-body mt-5 child">
+                <h3 class="card-title text-black fs-5">Design and Planning</h3>
+                <p class="lead text-black fs-6">
+                  Lorem ipsum dolor sit amet <br />consectetur adipisicing
+                  <br />elit. Beatae illum recusandae
+                </p>
+                <button
+                  class="btn text-white btn-custom-2"
+                  style="background-color: rgb(59, 175, 238)"
+                >
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
 
-	  <section id="services" class="services section-padding">
-             <div class="container">
-				<div class="row">
+          <div
+            class="col-12 col-lg-4 col-md-12 parent"
+            style="margin-top: 15px"
+          >
+            <div
+              class="card text-white text-center pb-5"
+              style="background-color: rgb(59, 175, 238)"
+            >
+              <div class="card-body mt-5 child">
+                <h3 class="card-title text-black fs-5">
+                  Renovation and Remodeling
+                </h3>
+                <p class="lead text-black fs-6">
+                  Lorem ipsum dolor sit amet <br />consectetur adipisicing
+                  <br />elit. Beatae illum recusandae
+                </p>
+                <button class="btn text-black" style="background-color: white">
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
 
-					<!-- pd-5 add padding to the bottom it can be btw 1 to 5-->
-					
-					<div class="col-12">
+          <div
+            class="col-12 col-lg-4 col-md-12 parent"
+            style="margin-top: 15px"
+          >
+            <div
+              class="card text-white text-center pb-5"
+              style="background-color: rgb(255, 255, 255)"
+            >
+              <div class="card-body mt-5 child">
+                <h3 class="card-title text-black fs-5">Interior Finishes</h3>
+                <p class="lead text-black fs-6">
+                  Lorem ipsum dolor sit amet <br />consectetur adipisicing
+                  <br />elit. Beatae illum recusandae
+                </p>
+                <button
+                  class="btn text-white btn-custom-2"
+                  style="background-color: rgb(59, 175, 238)"
+                >
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
 
-						<div class=" text-center pb-5">
-							<h3 class="service-text">Our Services</h3>
-							<p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Culpa mias.</p>
-						</div>
-					</div>
-			
-			
-				</div>
+          <div
+            class="col-12 col-lg-4 col-md-12 parent"
+            style="margin-top: 15px"
+          >
+            <div
+              class="card text-white text-center pb-5"
+              style="background-color: rgb(59, 175, 238)"
+            >
+              <div class="card-body mt-5 child">
+                <h3 class="card-title text-black fs-5">Exterior Finishes</h3>
+                <p class="lead text-black fs-6">
+                  Lorem ipsum dolor sit amet <br />consectetur adipisicing
+                  <br />elit. Beatae illum recusandae
+                </p>
+                <button class="btn text-black" style="background-color: white">
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
 
-				<div class="row">
-					<div class="col-12 col-lg-4 col-md-12 parent" style="margin-top: 15px;">
-						<div class="card text-white text-center  pb-5" style="background-color: white;">
-							<div class="card-body mt-5 child">
-							<h3 class="card-title text-black fs-5">
-								Design and Planning
-							</h3>
-							<p class="lead text-black fs-6">Lorem ipsum dolor sit amet <br>consectetur adipisicing <br>elit. Beatae illum recusandae </p>
-							<button class="btn text-white btn-custom-2" style="background-color: rgb(59, 175, 238);">Read more</button>
+          <div
+            class="col-12 col-lg-4 col-md-12 parent"
+            style="margin-top: 15px"
+          >
+            <div
+              class="card text-white text-center pb-5"
+              style="background-color: rgb(255, 255, 255)"
+            >
+              <div class="card-body mt-5 child">
+                <h3 class="card-title text-black fs-5">Electrical Services</h3>
+                <p class="lead text-black fs-6">
+                  Lorem ipsum dolor sit amet <br />consectetur adipisicing
+                  <br />elit. Beatae illum recusandae
+                </p>
+                <button
+                  class="btn btn-custom-2 text-white"
+                  style="background-color: rgb(59, 175, 238)"
+                >
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
 
-							</div>
-							
-						</div>
-					</div>
+          <div
+            class="col-12 col-lg-4 col-md-12 parent"
+            style="margin-top: 15px"
+          >
+            <div
+              class="card text-white text-center pb-5"
+              style="background-color: rgb(59, 175, 238)"
+            >
+              <div class="card-body mt-5 child">
+                <h3 class="card-title text-black fs-5">Plumbing and HVAC</h3>
+                <p class="lead text-black fs-6">
+                  Lorem ipsum dolor sit amet <br />consectetur adipisicing
+                  <br />elit. Beatae illum recusandae
+                </p>
+                <button class="btn text-black" style="background-color: white">
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-12">
+            <div class="about-img">
+              <img class="img-fluid" src="image/p3.png" />
+            </div>
+          </div>
 
-					<div class="col-12 col-lg-4 col-md-12 parent " style="margin-top: 15px;">
-						<div class="card text-white text-center  pb-5" style="background-color: rgb(59, 175, 238);">
-							<div class="card-body  mt-5 child">
-					
-							<h3 class="card-title text-black fs-5">
-								Renovation and Remodeling
-							</h3>
-							<p class="lead text-black fs-6">Lorem ipsum dolor sit amet <br>consectetur adipisicing <br>elit. Beatae illum recusandae </p>
-							<button class="btn text-black" style="background-color: white;">Read more</button>
-
-							</div>
-							
-						</div>
-					</div>
-
-
-
-					<div class="col-12 col-lg-4 col-md-12 parent" style="margin-top: 15px;">
-						<div class="card text-white text-center  pb-5" style="background-color: rgb(255, 255, 255);">
-							<div class="card-body mt-5 child">
-								
-							<h3 class="card-title text-black fs-5">
-								Interior Finishes
-							</h3>
-							<p class="lead text-black fs-6">Lorem ipsum dolor sit amet <br>consectetur adipisicing <br>elit. Beatae illum recusandae</p>
-							<button class="btn text-white btn-custom-2" style="background-color: rgb(59, 175, 238);">Read more</button>
-
-							</div>
-							
-						</div>
-					</div>
-
-						<div class="col-12 col-lg-4 col-md-12 parent " style="margin-top: 15px;">
-						<div class="card text-white text-center  pb-5" style="background-color: rgb(59, 175, 238);">
-							<div class="card-body  mt-5 child">
-					
-							<h3 class="card-title text-black fs-5">
-								Exterior Finishes
-							</h3>
-							<p class="lead text-black fs-6">Lorem ipsum dolor sit amet <br>consectetur adipisicing <br>elit. Beatae illum recusandae </p>
-							<button class="btn text-black" style="background-color: white;">Read more</button>
-
-							</div>
-							
-						</div>
-					</div>
-
-					<div class="col-12 col-lg-4 col-md-12 parent" style="margin-top: 15px;">
-						<div class="card text-white text-center pb-5" style="background-color: rgb(255, 255, 255);">
-							<div class="card-body mt-5 child">
-								
-							<h3 class="card-title text-black fs-5">
-								Electrical Services
-							</h3>
-							<p class="lead text-black fs-6">Lorem ipsum dolor sit amet <br>consectetur adipisicing <br>elit. Beatae illum recusandae</p>
-							<button class="btn btn-custom-2 text-white" style="background-color: rgb(59, 175, 238);">Read more</button>
-
-							</div>
-							
-						</div>
-					</div>
-
-
-					<div class="col-12 col-lg-4 col-md-12 parent " style="margin-top: 15px;">
-						<div class="card text-white text-center  pb-5"  style="background-color: rgb(59, 175, 238);">
-							<div class="card-body  mt-5 child">
-					
-							<h3 class="card-title text-black fs-5">
-								Plumbing and HVAC
-							</h3>
-							<p class="lead text-black fs-6">Lorem ipsum dolor sit amet <br>consectetur adipisicing <br>elit. Beatae illum recusandae </p>
-							<button class="btn text-black" style="background-color: white;">Read more</button>
-
-							</div>
-							
-						</div>
-					</div>
-
-
-				</div>
-			 </div>
-
-
-	  </section>
-
-
-	  <section id="about" class="about section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-12 col-12">
-					<div class="about-img">
-						<img class="img-fluid " src="image/p3.png">
-					</div>
-
-				</div>
-
-				<!-- ps-lg-5 applies the padding on start when the screen size is large 
+          <!-- ps-lg-5 applies the padding on start when the screen size is large 
 				
 				mt-md-5 applies the margin on top when screen size goes medium-->
-				<div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5" >
-					<div class="about-text">
+          <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+            <div class="about-text">
+              <h2 style="font-weight: 800; color: rgb(59, 175, 238)">
+                Why Us?
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                mollitia, aliquid quibusdam fugit amet itaque quisquam quidem
+                earum voluptate cupiditate aliquam quod quis tempora inventore
+                perspiciatis obcaecati minima sint, neque iusto minus
+                consectetur quasi! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Vero vitae necessitatibus iusto. Accusantium
+                nulla magnam laboriosam doloremque quae, non voluptatum, tempora
+                quos rem maiores officiis. Illo perspiciatis ab nihil ut?
+              </p>
+              <a
+                href="#"
+                class="btn btn-custom-2 text-white"
+                style="background-color: rgb(59, 175, 238)"
+              >
+                Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-						<h2 style="font-weight: 800; color: rgb(59, 175, 238);" >Why Us?</h2>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia, aliquid quibusdam fugit amet itaque quisquam quidem earum voluptate cupiditate aliquam quod quis tempora inventore perspiciatis obcaecati minima sint, neque iusto minus consectetur quasi!
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vitae necessitatibus iusto. Accusantium nulla magnam laboriosam doloremque quae, non voluptatum, tempora quos rem maiores officiis. Illo perspiciatis ab nihil ut?
-							
-						</p>
-						<a href="#" class="btn btn-custom-2 text-white" style="background-color: rgb(59, 175, 238);"> Read More</a>
-					</div>
+    <!-- quality section -->
 
+    <section id="quality" class="quality section-padding">
+      <div class="container">
+        <div class="row">
+          <h2
+            class="text-center mb-5"
+            style="font-weight: 800; color: rgb(59, 175, 238)"
+          >
+            We Provide You With The Best
+          </h2>
+          <div class="col-lg-6 col-md-12 col-12 mt-4">
+            <div class="about-img-quality">
+              <!-- <img class="img-fluid " src="image/p3.png"> -->
 
-				</div>
-			</div>
+              <video autoplay loop muted plays-inline id="back-video">
+                <source
+                  src="image/v10c (online-video-cutter.com).mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-12 mt-4">
+            <div class="about-img-quality">
+              <!-- <img class="img-fluid " src="image/p3.png"> -->
 
+              <video autoplay loop muted plays-inline id="back-video">
+                <source src="image/v7.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
 
-		</div>
-
-
-	  </section>
-
-<!-- quality section -->
-
-	  <section id="quality" class="quality section-padding">
-		<div class="container">
-			<div class="row">
-				<h2 class="text-center mb-5" style="font-weight: 800; color: rgb(59, 175, 238);" >We Provide You With The Best</h2>
-				<div class="col-lg-6 col-md-12 col-12 mt-4">
-					
-					<div class="about-img-quality">
-						<!-- <img class="img-fluid " src="image/p3.png"> -->
-						
-						<video autoplay loop muted plays-inline id="back-video">
-							<source src="image/v10c (online-video-cutter.com).mp4" type="video/mp4"> </video> 
-					</div>
-
-				</div>
-				<div class="col-lg-6 col-md-12 col-12 mt-4">
-					<div class="about-img-quality">
-						<!-- <img class="img-fluid " src="image/p3.png"> -->
-						
-						<video autoplay loop muted plays-inline id="back-video">
-							<source src="image/v7.mp4" type="video/mp4"> </video> 
-					</div>
-
-				</div>
-
-				<!-- ps-lg-5 applies the padding on start when the screen size is large 
+          <!-- ps-lg-5 applies the padding on start when the screen size is large 
 				
 				mt-md-5 applies the margin on top when screen size goes medium-->
-				<div class="col-lg-12 col-md-12 col-12 ps-lg-5 mt-md-5" >
-					<div class="about-text ">
-
-						
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia,<br> aliquid quibusdam fugit amet itaque quisquam quidem earum voluptate<br> cupiditate aliquam quod quis tempora inventore perspiciatis obcaecati,<br> minima sint neque iusto
-							
-							
-						</p>
-						<a href="#" class="btn btn-custom-2 text-white" style="background-color: rgb(59, 175, 238);"> Read More</a>
-					</div>
-
-
-				</div>
-
-
-			</div>
-
-
-		</div>
-
-
-	  </section>
-
-
-
-	  <!-- portfolio section -->
-
-	  <section id="portfolio" class="portfolio section-padding">
-		<div class="container">
-
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-header text-center pb-5">
-						<h2  class="service-text">Milestones</h2>
-						<p>We have served the best! because <br>we beileve in qualtity and integrety</p>
-					</div>
-
-
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-12 col-md-12 col-lg-4" style="margin-top: 10px;">
-					<div class="card text-center bg-white pb-2 ">
-						<div class="card-body text-dark parent">
-							<div class="img-area mb-4 child">
-								<!-- <img  class="img-fluid" src="image/p1 (2).jpg"> -->
-								<video autoplay loop muted plays-inline id="back-video">
-									<source src="image/v3.mp4" type="video/mp4"> </video> 
-
-							</div>
-							<div style="margin-top: 60px;">
-								<h3 class="card-title service-text">New York</h3>
-								<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iste earum enim? Voluptas aspernatur nisi!</p>
-								<button class="btn btn-custom-2 text-white" style="background-color: rgb(59, 175, 238);">Read More</button>
-
-							</div>
-
-							
-						</div>
-					</div>
-				</div>
-
-
-				<div class="col-12 col-md-12 col-lg-4" style="margin-top: 10px;">
-					<div class="card text-center bg-white pb-2">
-						<div class="card-body text-dark parent">
-							<div class="img-area mb-4 child">
-								<!-- <img  class="img-fluid" src="image/p2 (1).jpeg"> -->
-								<video autoplay loop muted plays-inline id="back-video">
-									<source src="image/v2.mp4" type="video/mp4"> </video> 
-
-							</div>
-<div style="margin-top: 60px;">
-	<h3 class="card-title service-text">Germany</h3>
-								<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iste earum enim? Voluptas aspernatur nisi!</p>
-								<button class="btn  btn-custom-2 text-white" style="background-color: rgb(59, 175, 238);">Read More</button>
-
-</div>
-							
-						</div>
-					</div>
-				</div>
-
-
-
-				<div class="col-12 col-md-12 col-lg-4" style="margin-top: 10px;">
-					<div class="card text-center bg-white pb-2">
-						<div class="card-body text-dark parent">
-							<div class="img-area mb-4 child">
-								<!-- <img  class="img-fluid" src="image/p3 (1).png"> -->
-								<video autoplay loop muted plays-inline id="back-video">
-									<source src="image/video1.mp4" type="video/mp4"> </video> 
-
-							</div>
-<div style="margin-top: 60px;">
-	<h3 class="card-title service-text">Dubai</h3>
-								<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iste earum enim? Voluptas aspernatur nisi!</p>
-								<button class="btn text-white btn-custom-2" style="background-color: rgb(59, 175, 238);">Read More</button>
-</div>
-							
-						</div>
-					</div>
-				</div>
-
-				<div class="col-12 col-md-12 col-lg-4 " style="margin-top: 10px;">
-					<div class="card text-center bg-white pb-2">
-						<div class="card-body text-dark parent">
-							<div class="img-area mb-4 child">
-								<!-- <img  class="img-fluid" src="image/project-3.jpg"> -->
-								<video autoplay loop muted plays-inline id="back-video">
-									<source src="image/v4.mp4" type="video/mp4"> </video> 
-
-							</div>
-
-							<div style="margin-top: 60px;">
-								<h3 class="card-title service-text">Arab</h3>
-								<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iste earum enim? Voluptas aspernatur nisi!</p>
-								<button class="btn btn-custom-2 text-white" style="background-color: rgb(59, 175, 238);">Read More</button>
-								
-							</div>
-
-							
-						</div>
-					</div>
-				</div>
-
-
-				<div class="col-12 col-md-12 col-lg-4 " style="margin-top: 10px;">
-					<div class="card text-center bg-white pb-2">
-						<div class="card-body text-dark parent">
-							<div class="img-area mb-4 child">
-								<!-- <img  class="img-fluid" src="image/p3 (1).png"> -->
-								<video autoplay loop muted plays-inline id="back-video">
-									<source src="image/v5.mp4" type="video/mp4"> </video> 
-
-							</div>
-
-							<div style="margin-top: 60px;">
-								<h3 class="card-title service-text">Pakistan</h3>
-								<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iste earum enim? Voluptas aspernatur nisi!</p>
-								<button class="btn btn-custom-2 text-white" style="background-color: rgb(59, 175, 238);">Read More</button>
-								
-								
-							</div>
-
-						
-						</div>
-					</div>
-				</div>
-
-
-
-				<div class="col-12 col-md-12 col-lg-4" style="margin-top: 10px;">
-					<div class="card text-center bg-white pb-2">
-						<div class="card-body text-dark parent">
-							<div class="img-area mb-4 child">
-								<!-- <img  class="img-fluid" src="image/p1 (2).jpg"> -->
-								<video autoplay loop muted plays-inline id="back-video">
-									<source src="image/v6.mp4" type="video/mp4"> </video> 
-
-							</div>
-
-							<div style="margin-top: 60px;">
-								<h3 class="card-title service-text">London</h3>
-								<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iste earum enim? Voluptas aspernatur nisi!</p>
-								<button class="btn btn-custom-2  text-white" style="background-color: rgb(59, 175, 238);">Read More</button>
-							
-								
-								
-							</div>
-
-							
-						</div>
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-
-
-
-
-	  </section>
-
-
-<!-- client section -->
-
-<section id="clients" class="client section-padding   p-2 text-center">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="section-header text-center pb-5">
-					<h2  class="service-text">Our Client</h2>
-					<p>Meet Our client Because Here We Believe And Trust </p>
-				</div>
-			</div>
-		</div>
-
-		<div class="row  mt-15 mb-15 pt-20 pb-20s" style="background-color: rgb(59, 175, 238);">
-			<div class="col-md-4 col-lg-2 mt-3 mb-3 parent">
-				<div class="child">
-					<a href="#"> <img style="background-color:white; border: 1px solid grey ;" src="image/client-01-144x63.png"></a>	
-
-				</div>
-			
-			</div>
-			<div class="col-md-3 col-lg-2 mt-3 mb-3 parent">
-				<div class="child">
-					<a href="#"><img style="background-color:white;border: 1px solid grey " src="image/client-02-144x63.png"></a>	
-
-				</div>
-				
-			</div>
-			<div class="col-md-3 col-lg-2 mt-3 mb-3 parent">
-				<div class="child">
-					<a href="#"><img style="background-color:white ;border: 1px solid grey " src="image/client-03-144x63.png"></a>
-					
-				</div>
-					
-			</div>
-			<div class="col-md-3 col-lg-2 mt-3 mb-3 parent">
-				<div class="child">
-					<a href="#"><img style="background-color:white ;border: 1px solid grey " src="image/client-04-144x63.png"></a>
-					
-				</div>
-					
-			</div>
-			<div class="col-md-3 col-lg-2 mt-3 mb-3 parent">
-				<div class="child">
-					<a href="#"><img style="background-color:white ;border: 1px solid grey " src="image/client-05-144x63.png"></a>
-					
-				</div>
-					
-			</div>
-			<div class="col-md-3 col-lg-2 mt-3 mb-3 parent">
-				<div class="child">
-					<a href="#">
-						<img style="background-color:white ;border: 1px solid grey " src="image/client-06-144x63.png">
-	
-					</a>	
-					
-				</div>
-				
-			</div>
-		</div>
-		
-
-	</div>
-
-  </section>
-
-
-
-	  <!-- team section -->
-
-	  <section id="team" class="team section-padding">
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="section-header text-center pb-5">
-				<h2  class="service-text">Our Gems</h2>
-				<p>Our hardworking team is here to protect your future! <br>Feel free to contact </p>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-12 col-md-6 col-lg-3" style="margin-top: 10px;">
-			<div class="card text-center">
-				<div class="card-body">
-					<img class="img-fluid rounded-circle" src="image/t1 (1).jpg">
-					<h3 class="card-title py-2">Jack Wilson</h3>
-					<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo nulla aut culpa qu</p>
-					<p class="socials">
-						<i class="bi bi-twitter text-dark mx-1" ></i>
-						<i class="bi bi-messenger text-dark mx-1" ></i>
-						<i class="bi bi-facebook text-dark mx-1" ></i>
-						<i class="bi bi-instagram text-dark mx-1" ></i>
-
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="col-12 col-md-6 col-lg-3"  style="margin-top: 10px;">
-			<div class="card text-center">
-				<div class="card-body">
-					<img class="img-fluid rounded-circle" src="image/team-2.jpg">
-					<h3 class="card-title py-2">ken len</h3>
-					<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo nulla aut culpa qu</p>
-					<p class="socials">
-						<i class="bi bi-twitter text-dark mx-1" ></i>
-						<i class="bi bi-messenger text-dark mx-1" ></i>
-						<i class="bi bi-facebook text-dark mx-1" ></i>
-						<i class="bi bi-instagram text-dark mx-1" ></i>
-
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-
-		<div class="col-12 col-md-6 col-lg-3"  style="margin-top: 10px;">
-			<div class="card text-center">
-				<div class="card-body">
-					<img class="img-fluid rounded-circle" src="image/team-3.jpg">
-					<h3 class="card-title py-2">Mack Mex</h3>
-					<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo nulla aut culpa qu</p>
-					<p class="socials">
-						<i class="bi bi-twitter text-dark mx-1" ></i>
-						<i class="bi bi-messenger text-dark mx-1" ></i>
-						<i class="bi bi-facebook text-dark mx-1" ></i>
-						<i class="bi bi-instagram text-dark mx-1" ></i>
-
-					</p>
-				</div>
-			</div>
-		</div>
-
-
-
-		<div class="col-12 col-md-6 col-lg-3"  style="margin-top: 10px;">
-			<div class="card text-center">
-				<div class="card-body">
-					<img class="img-fluid rounded-circle" src="image/t1 (1).jpg">
-					<h3 class="card-title py-2">Loren kil</h3>
-					<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo nulla aut culpa qu</p>
-					<p class="socials">
-						<i class="bi bi-twitter text-dark mx-1" ></i>
-						<i class="bi bi-messenger text-dark mx-1" ></i>
-						<i class="bi bi-facebook text-dark mx-1" ></i>
-						<i class="bi bi-instagram text-dark mx-1" ></i>
-
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
-
-
-	  </section>
-
-
-	  
-
-	  <section id="customer" class="customer section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-header text-center pb-5">
-						<h2  class="service-text">What Our Custumer Says?</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Ad velit repellat saepe non expedita sapiente laboriosam </p>
-					</div>
-				</div>
-			</div>
-		
-			<div class="row">
-				<div class="col-12 col-md-6 col-lg-3 "  style="margin-top: 10px;">
-					<div class="card text-center">
-						<div class="card-body">
-							<img class="img-fluid rounded-circle" src="image/customer1.jpg">
-							<h3 class="card-title py-2">Jack Wilson</h3>
-							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo nulla aut culpa qu</p>
-							<p class="stars">
-								<svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-								  
-								  
-								
-								
-								
-		
-							</p>
-						</div>
-					</div>
-				</div>
-		
-		
-				<div class="col-12 col-md-6 col-lg-3"  style="margin-top: 10px;">
-					<div class="card text-center">
-						<div class="card-body">
-							<img class="img-fluid rounded-circle" src="image/customer3 (1).jpg">
-							<h3 class="card-title py-2">ken len</h3>
-							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo nulla aut culpa qu</p>
-							<p class="socials">
-								<svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-		
-							</p>
-						</div>
-					</div>
-				</div>
-		
-		
-		
-				<div class="col-12 col-md-6 col-lg-3"  style="margin-top: 10px;">
-					<div class="card text-center">
-						<div class="card-body">
-							<img class="img-fluid rounded-circle" src="image/customer4 (1).jpg">
-							<h3 class="card-title py-2">Mack Mex</h3>
-							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo nulla aut culpa qu</p>
-							<p class="socials">
-								<svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-							</p>
-						</div>
-					</div>
-				</div>
-		
-		
-		
-				<div class="col-12 col-md-6 col-lg-3"  style="margin-top: 10px;">
-					<div class="card text-center">
-						<div class="card-body">
-							<img class="img-fluid rounded-circle" src="image/customer1.jpg">
-							<h3 class="card-title py-2">Loren kil</h3>
-							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo nulla aut culpa qu</p>
-							<p class="socials">
-								<svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-
-
-								  <svg class="bi bi-star mx-1 yellow-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill="yellow" d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"/>
-								  </svg>
-		
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		
-		
-		
-		
-			  </section>
-	  
-
-
-
-
-	  <!-- contact section -->
-	  <section id="contact" class="contact section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-header text-center pb-5">
-						<h2 class="service-text" >Contact Us</h2>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta enim dolorum est.</p>
-					</div>
-					
-				</div>
-			</div>
-<!-- //class form control is used to make them compltet full space -->
-			<div class="row m-0">
-				<div class="col-md-12 p-0 pt-4 p-4 m-auto">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="mb-3">
-								<p style="color: rgb(59, 175, 238);">Name</p>
-								<input type="text" class="form-control" required placeholder=" Enter Your Name">
-							</div>
-						</div>
-
-
-						<div class="col-md-12">
-							<div class="mb-3">
-								<p style="color:rgb(59, 175, 238);">Email</p>
-								<input type="email" class="form-control" required placeholder=" Enter Your Email">
-							</div>
-						</div>
-
-						
-						<div class="col-md-12">
-							<div class="mb-3">
-								<p style="color:rgb(59, 175, 238);">Phone no</p>
-								<input type="text" class="form-control" required placeholder="Enter Your Phone Number">
-							</div>
-						</div>
-
-
-						<div class="col-md-12">
-							<div class="mb-3">
-								<p style="color:rgb(59, 175, 238);">Message</p>
-								<textarea class="form-control" rows="3" placeholder="Send your Message"></textarea>
-							</div>
-						</div>
-
-						<button class="btn  btn-lg btn-block mt-3 text-white" style="background-color: rgb(59, 175, 238);">Send</button>
-
-
-					</div>
-					
-					
-				</div>
-			</div>
-
-			
-		</div>
-
-
-
-
-	  </section>
-
-
-	  <footer class="bg-info p-2 text-center">
-		<div class="container">
-			<p class="text-white">
-				All Rights are Reserved By @Owner
-			</p>
- 
-		</div>
-
-	  </footer>
-	  
-	  
-
-
-
-
-
-
-
-
-
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" ></script>
+          <div class="col-lg-12 col-md-12 col-12 ps-lg-5 mt-md-5">
+            <div class="about-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                mollitia,<br />
+                aliquid quibusdam fugit amet itaque quisquam quidem earum
+                voluptate<br />
+                cupiditate aliquam quod quis tempora inventore perspiciatis
+                obcaecati,<br />
+                minima sint neque iusto
+              </p>
+              <a
+                href="#"
+                class="btn btn-custom-2 text-white"
+                style="background-color: rgb(59, 175, 238)"
+              >
+                Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section -->
+
+    <section id="portfolio" class="portfolio section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2 class="service-text">Milestones</h2>
+              <p>
+                We have served the best! because <br />we beileve in qualtity
+                and integrety
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4" style="margin-top: 10px">
+            <div class="card text-center bg-white pb-2">
+              <div class="card-body text-dark parent">
+                <div class="img-area mb-4 child">
+                  <!-- <img  class="img-fluid" src="image/p1 (2).jpg"> -->
+                  <video autoplay loop muted plays-inline id="back-video">
+                    <source src="image/v3.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div style="margin-top: 60px">
+                  <h3 class="card-title service-text">New York</h3>
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo iste earum enim? Voluptas aspernatur nisi!
+                  </p>
+                  <button
+                    class="btn btn-custom-2 text-white"
+                    style="background-color: rgb(59, 175, 238)"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-4" style="margin-top: 10px">
+            <div class="card text-center bg-white pb-2">
+              <div class="card-body text-dark parent">
+                <div class="img-area mb-4 child">
+                  <!-- <img  class="img-fluid" src="image/p2 (1).jpeg"> -->
+                  <video autoplay loop muted plays-inline id="back-video">
+                    <source src="image/v2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div style="margin-top: 60px">
+                  <h3 class="card-title service-text">Germany</h3>
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo iste earum enim? Voluptas aspernatur nisi!
+                  </p>
+                  <button
+                    class="btn btn-custom-2 text-white"
+                    style="background-color: rgb(59, 175, 238)"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-4" style="margin-top: 10px">
+            <div class="card text-center bg-white pb-2">
+              <div class="card-body text-dark parent">
+                <div class="img-area mb-4 child">
+                  <!-- <img  class="img-fluid" src="image/p3 (1).png"> -->
+                  <video autoplay loop muted plays-inline id="back-video">
+                    <source src="image/video1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div style="margin-top: 60px">
+                  <h3 class="card-title service-text">Dubai</h3>
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo iste earum enim? Voluptas aspernatur nisi!
+                  </p>
+                  <button
+                    class="btn text-white btn-custom-2"
+                    style="background-color: rgb(59, 175, 238)"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-4" style="margin-top: 10px">
+            <div class="card text-center bg-white pb-2">
+              <div class="card-body text-dark parent">
+                <div class="img-area mb-4 child">
+                  <!-- <img  class="img-fluid" src="image/project-3.jpg"> -->
+                  <video autoplay loop muted plays-inline id="back-video">
+                    <source src="image/v4.mp4" type="video/mp4" />
+                  </video>
+                </div>
+
+                <div style="margin-top: 60px">
+                  <h3 class="card-title service-text">Arab</h3>
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo iste earum enim? Voluptas aspernatur nisi!
+                  </p>
+                  <button
+                    class="btn btn-custom-2 text-white"
+                    style="background-color: rgb(59, 175, 238)"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-4" style="margin-top: 10px">
+            <div class="card text-center bg-white pb-2">
+              <div class="card-body text-dark parent">
+                <div class="img-area mb-4 child">
+                  <!-- <img  class="img-fluid" src="image/p3 (1).png"> -->
+                  <video autoplay loop muted plays-inline id="back-video">
+                    <source src="image/v5.mp4" type="video/mp4" />
+                  </video>
+                </div>
+
+                <div style="margin-top: 60px">
+                  <h3 class="card-title service-text">Pakistan</h3>
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo iste earum enim? Voluptas aspernatur nisi!
+                  </p>
+                  <button
+                    class="btn btn-custom-2 text-white"
+                    style="background-color: rgb(59, 175, 238)"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-4" style="margin-top: 10px">
+            <div class="card text-center bg-white pb-2">
+              <div class="card-body text-dark parent">
+                <div class="img-area mb-4 child">
+                  <!-- <img  class="img-fluid" src="image/p1 (2).jpg"> -->
+                  <video autoplay loop muted plays-inline id="back-video">
+                    <source src="image/v6.mp4" type="video/mp4" />
+                  </video>
+                </div>
+
+                <div style="margin-top: 60px">
+                  <h3 class="card-title service-text">London</h3>
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo iste earum enim? Voluptas aspernatur nisi!
+                  </p>
+                  <button
+                    class="btn btn-custom-2 text-white"
+                    style="background-color: rgb(59, 175, 238)"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- client section -->
+
+    <section id="clients" class="client section-padding p-2 text-center">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2 class="service-text">Our Client</h2>
+              <p>Meet Our client Because Here We Believe And Trust</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="row mt-15 mb-15 pt-20 pb-20s"
+          style="background-color: rgb(59, 175, 238)"
+        >
+          <div class="col-md-4 col-lg-2 mt-3 mb-3 parent">
+            <div class="child">
+              <a href="#">
+                <img
+                  style="background-color: white; border: 1px solid grey"
+                  src="image/client-01-144x63.png"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-2 mt-3 mb-3 parent">
+            <div class="child">
+              <a href="#"
+                ><img
+                  style="background-color: white; border: 1px solid grey"
+                  src="image/client-02-144x63.png"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-2 mt-3 mb-3 parent">
+            <div class="child">
+              <a href="#"
+                ><img
+                  style="background-color: white; border: 1px solid grey"
+                  src="image/client-03-144x63.png"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-2 mt-3 mb-3 parent">
+            <div class="child">
+              <a href="#"
+                ><img
+                  style="background-color: white; border: 1px solid grey"
+                  src="image/client-04-144x63.png"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-2 mt-3 mb-3 parent">
+            <div class="child">
+              <a href="#"
+                ><img
+                  style="background-color: white; border: 1px solid grey"
+                  src="image/client-05-144x63.png"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-2 mt-3 mb-3 parent">
+            <div class="child">
+              <a href="#">
+                <img
+                  style="background-color: white; border: 1px solid grey"
+                  src="image/client-06-144x63.png"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- team section -->
+
+    <section id="team" class="team section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2 class="service-text">Our Gems</h2>
+              <p>
+                Our hardworking team is here to protect your future! <br />Feel
+                free to contact
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3" style="margin-top: 10px">
+            <div class="card text-center">
+              <div class="card-body">
+                <img class="img-fluid rounded-circle" src="image/t1 (1).jpg" />
+                <h3 class="card-title py-2">Jack Wilson</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  nemo nulla aut culpa qu
+                </p>
+                <p class="socials">
+                  <i class="bi bi-twitter text-dark mx-1"></i>
+                  <i class="bi bi-messenger text-dark mx-1"></i>
+                  <i class="bi bi-facebook text-dark mx-1"></i>
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3" style="margin-top: 10px">
+            <div class="card text-center">
+              <div class="card-body">
+                <img class="img-fluid rounded-circle" src="image/team-2.jpg" />
+                <h3 class="card-title py-2">ken len</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  nemo nulla aut culpa qu
+                </p>
+                <p class="socials">
+                  <i class="bi bi-twitter text-dark mx-1"></i>
+                  <i class="bi bi-messenger text-dark mx-1"></i>
+                  <i class="bi bi-facebook text-dark mx-1"></i>
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3" style="margin-top: 10px">
+            <div class="card text-center">
+              <div class="card-body">
+                <img class="img-fluid rounded-circle" src="image/team-3.jpg" />
+                <h3 class="card-title py-2">Mack Mex</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  nemo nulla aut culpa qu
+                </p>
+                <p class="socials">
+                  <i class="bi bi-twitter text-dark mx-1"></i>
+                  <i class="bi bi-messenger text-dark mx-1"></i>
+                  <i class="bi bi-facebook text-dark mx-1"></i>
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3" style="margin-top: 10px">
+            <div class="card text-center">
+              <div class="card-body">
+                <img class="img-fluid rounded-circle" src="image/t1 (1).jpg" />
+                <h3 class="card-title py-2">Loren kil</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  nemo nulla aut culpa qu
+                </p>
+                <p class="socials">
+                  <i class="bi bi-twitter text-dark mx-1"></i>
+                  <i class="bi bi-messenger text-dark mx-1"></i>
+                  <i class="bi bi-facebook text-dark mx-1"></i>
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="customer" class="customer section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2 class="service-text">What Our Custumer Says?</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />
+                Ad velit repellat saepe non expedita sapiente laboriosam
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3" style="margin-top: 10px">
+            <div class="card text-center">
+              <div class="card-body">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="image/customer1.jpg"
+                />
+                <h3 class="card-title py-2">Jack Wilson</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  nemo nulla aut culpa qu
+                </p>
+                <p class="stars">
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3" style="margin-top: 10px">
+            <div class="card text-center">
+              <div class="card-body">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="image/customer3 (1).jpg"
+                />
+                <h3 class="card-title py-2">ken len</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  nemo nulla aut culpa qu
+                </p>
+                <p class="socials">
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3" style="margin-top: 10px">
+            <div class="card text-center">
+              <div class="card-body">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="image/customer4 (1).jpg"
+                />
+                <h3 class="card-title py-2">Mack Mex</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  nemo nulla aut culpa qu
+                </p>
+                <p class="socials">
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3" style="margin-top: 10px">
+            <div class="card text-center">
+              <div class="card-body">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="image/customer1.jpg"
+                />
+                <h3 class="card-title py-2">Loren kil</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  nemo nulla aut culpa qu
+                </p>
+                <p class="socials">
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="bi bi-star mx-1 yellow-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="yellow"
+                      d="M7.498.408a.5.5 0 0 1 .996 0l.001 5.878 5.305.573a.5.5 0 0 1 .254.848l-4.083 3.97 1.043 6.077a.5.5 0 0 1-.723.527l-5.327-2.793-5.327 2.793a.5.5 0 0 1-.723-.526l1.043-6.078-4.083-3.97a.5.5 0 0 1 .254-.848l5.305-.572.001-5.879z"
+                    />
+                  </svg>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2 class="service-text">Contact Us</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                enim dolorum est.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- //class form control is used to make them compltet full space -->
+        <div class="row m-0">
+          <div class="col-md-12 p-0 pt-4 p-4 m-auto">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <p style="color: rgb(59, 175, 238)">Name</p>
+                  <input
+                    type="text"
+                    class="form-control"
+                    required
+                    placeholder=" Enter Your Name"
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <p style="color: rgb(59, 175, 238)">Email</p>
+                  <input
+                    type="email"
+                    class="form-control"
+                    required
+                    placeholder=" Enter Your Email"
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <p style="color: rgb(59, 175, 238)">Phone no</p>
+                  <input
+                    type="text"
+                    class="form-control"
+                    required
+                    placeholder="Enter Your Phone Number"
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <p style="color: rgb(59, 175, 238)">Message</p>
+                  <textarea
+                    class="form-control"
+                    rows="3"
+                    placeholder="Send your Message"
+                  ></textarea>
+                </div>
+              </div>
+
+              <button
+                class="btn btn-lg btn-block mt-3 text-white"
+                style="background-color: rgb(59, 175, 238)"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-info p-2 text-center">
+      <div class="container">
+        <p class="text-white">All Rights are Reserved By @Owner</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
